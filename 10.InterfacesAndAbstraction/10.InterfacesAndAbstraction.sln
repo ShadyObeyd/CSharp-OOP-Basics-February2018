@@ -11,13 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Ferrari", "03.Ferrari\03
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.Telephony", "04.Telephony\04.Telephony.csproj", "{C9443F47-478F-459A-A0AB-6EA35C525C12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.BorderControl", "05.BorderControl\05.BorderControl.csproj", "{B1D57BC8-DB97-4C1B-80B8-45F1ED2DCF91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.BorderControl", "05.BorderControl\05.BorderControl.csproj", "{B1D57BC8-DB97-4C1B-80B8-45F1ED2DCF91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.BirthdayCelebrations", "06.BirthdayCelebrations\06.BirthdayCelebrations.csproj", "{45DE2855-7A7D-4EC2-B577-941972678BAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.BirthdayCelebrations", "06.BirthdayCelebrations\06.BirthdayCelebrations.csproj", "{45DE2855-7A7D-4EC2-B577-941972678BAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.FoodStorage", "07.FoodStorage\07.FoodStorage.csproj", "{A9BF3221-56D4-4DCB-A7F5-7DFCF272D3F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.FoodStorage", "07.FoodStorage\07.FoodStorage.csproj", "{A9BF3221-56D4-4DCB-A7F5-7DFCF272D3F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.MilitaryElite", "08.MilitaryElite\08.MilitaryElite.csproj", "{2B090452-7311-4A3E-BECF-56E7FEBEB341}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.MilitaryElite", "08.MilitaryElite\08.MilitaryElite.csproj", "{2B090452-7311-4A3E-BECF-56E7FEBEB341}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
