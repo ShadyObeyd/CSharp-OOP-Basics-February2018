@@ -3,12 +3,12 @@ using System.Text;
 
 public class LeutenantGeneral : Private
 {
-    public List<Private> Privates { get; set; }
+    public List<Soldier> Privates { get; set; }
 
     public LeutenantGeneral(string id, string firstName, string lastName, double salary)
         : base(id, firstName, lastName, salary)
     {
-        Privates = new List<Private>();
+        Privates = new List<Soldier>();
     }
 
     public override string ToString()

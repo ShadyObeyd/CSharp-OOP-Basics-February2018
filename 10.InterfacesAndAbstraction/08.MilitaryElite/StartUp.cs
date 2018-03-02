@@ -115,12 +115,9 @@ class StartUp
         {
             foreach (Soldier soldier in army)
             {
-                if (soldier is Private)
+                if (soldier.Id == id)
                 {
-                    if (soldier.Id == id)
-                    {
-                        officer.Privates.Add((Private)soldier);
-                    }
+                    officer.Privates.Add(soldier);
                 }
             }
         }
