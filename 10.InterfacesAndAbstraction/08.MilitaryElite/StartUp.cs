@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 class StartUp
 {
@@ -28,14 +29,8 @@ class StartUp
                         {
                             string privateId = soldierTokens[i];
 
-                            foreach (Soldier soldier in army)
-                            {
-                                if (soldier.Id == privateId)
-                                {
-                                    officer.Privates.Add(soldier);
-                                    break;
-                                }
-                            }
+                            Soldier @private = army.First(p => p.Id == privateId);
+                            officer.Privates.Add(@private);
                         }
                     }
                     army.Add(officer);
@@ -43,6 +38,7 @@ class StartUp
                 case "Engineer":
                     if (!CorpsIsValid(soldierTokens[5]))
                     {
+                        input = Console.ReadLine();
                         continue;
                     }
                     Engineer engineer = new Engineer(soldierTokens[1], soldierTokens[2], soldierTokens[3], double.Parse(soldierTokens[4]), soldierTokens[5]);
@@ -64,6 +60,7 @@ class StartUp
                 case "Commando":
                     if (!CorpsIsValid(soldierTokens[5]))
                     {
+                        input = Console.ReadLine();
                         continue;
                     }
                     Commando commando = new Commando(soldierTokens[1], soldierTokens[2], soldierTokens[3], double.Parse(soldierTokens[4]), soldierTokens[5]);
