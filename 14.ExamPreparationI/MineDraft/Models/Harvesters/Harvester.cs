@@ -1,24 +1,16 @@
 ﻿using System;
 using System.Text;
 
-public abstract class Harvester
+public abstract class Harvester : Unit
 {
     private const double MAX_ENERGY_REQUIREMENT = 20000;
-    private string id;
     private double oreOutput;
     private double energyRequirement;
 
-    protected Harvester(string id, double oreOutput, double energyRequirement)
+    protected Harvester(string id, double oreOutput, double energyRequirement) : base(id)
     {
-        this.Id = id;
         this.OreOutput = oreOutput;
         this.EnergyRequirement = energyRequirement;
-    }
-
-    public string Id
-    {
-        get { return id; }
-        protected set { id = value; }
     }
 
     public double OreOutput

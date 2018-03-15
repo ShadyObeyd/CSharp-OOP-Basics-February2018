@@ -1,22 +1,15 @@
 ﻿using System;
 using System.Text;
 
-public abstract class Provider
+public abstract class Provider : Unit
 {
     private const double MAX_ENERGY_OUTPUT = 10000;
     private string id;
     private double energyOutput;
 
-    protected Provider(string id, double energyOutput)
+    protected Provider(string id, double energyOutput) :base(id)
     {
-        this.Id = id;
         this.EnergyOutput = energyOutput;
-    }
-
-    public string Id
-    {
-        get { return id; }
-        protected set { id = value; }
     }
 
     public double EnergyOutput
